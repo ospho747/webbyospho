@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ospho</title>
+    <style>
+        /* Style de base de la page */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://cdn.discordapp.com/attachments/1276911016105476130/1301045745729933332/Coq_Dessin.gif?ex=67230cc6&is=6721bb46&hm=ba48ad319ae185ff24f9564205a12fcc6deac3ed2928fcdfdbde2e07bcd5f5e5') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* Vignette centrée et agrandie */
+        .container {
+            text-align: center;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            background-color: transparent; /* Vignette invisible */
+            width: 450px; /* Agrandi de 150% */
+        }
+
+        /* Espace pour la photo de profil */
+        .profile-pic {
+            margin-bottom: 20px;
+            border-radius: 50%;
+            overflow: hidden;
+            width: 100px; /* Taille de la photo */
+            height: 100px; /* Taille de la photo */
+            margin: 0 auto;
+        }
+
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Pour garder les proportions de l'image */
+        }
+
+        /* Titre "ospho" */
+        .ospho-title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #FFFFFF;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Effet de brillance */
+            margin-bottom: 20px;
+        }
+
+        /* Bio en blanc */
+        .bio {
+            font-size: 20px; /* Taille de la bio */
+            color: #FFFFFF; /* Couleur du texte de la bio */
+            margin-bottom: 20px; /* Espace en dessous */
+        }
+
+        /* Boutons stylisés */
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            padding: 10px;
+            margin: 10px auto;
+            font-size: 18px;
+            font-weight: bold;
+            color: white; /* Couleur du texte du bouton */
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Icônes pour chaque bouton */
+        .btn svg {
+            margin-right: 10px;
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Styles pour chaque réseau */
+        .btn.discord { background-color: #5865F2; }
+        .btn.tiktok { background-color: #69C9D0; }
+        .btn.youtube { background-color: #FF0000; }
+
+        /* Animation de lueur au survol */
+        .btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.4);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 8px;
+        }
+
+        /* Effet de lueur et zoom au survol */
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        .btn:hover::before {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Espace pour la photo de profil -->
+        <div class="profile-pic">
+            <img src="https://media.tenor.com/aJOG_4oAjKMAAAAe/the-purge-kiss-me.png" alt="Photo de profil"> <!-- Remplace par le lien de ta photo de profil -->
+        </div>
+        
+        <!-- Titre "ospho" -->
+        <div class="ospho-title">ospho</div>
+
+        <!-- Bio -->
+        <div class="bio">venez sur mon shop les freres</div> <!-- Ajout d'une div pour la bio -->
+
+        <!-- Bouton Discord -->
+        <button class="btn discord" onclick="window.location.href='https://discord.gg/BjrDD8HRyH';">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.317 4.369A19.791 19.791 0 0016.949 3a14.47 14.47 0 00-.719 1.511 18.993 18.993 0 00-5.462 0A14.55 14.55 0 0010.051 3 19.796 19.796 0 003.683 4.369C1.522 8.173.751 11.881.428 15.545a19.896 19.896 0 005.994 3.08 14.924 14.924 0 001.258-2.021 12.318 12.318 0 01-1.979-.939c.167-.119.335-.238.497-.361 3.94 1.92 8.189 1.92 12.104 0 .162.123.33.242.507.356a19.774 19.774 0 004.85-7.257c.028-.1.068-.214.075-.348 0-.001.001-.003.001-.004A19.825 19.825 0 0020.317 4.37z"/>
+            </svg>
+            Discord
+       
+
+           
